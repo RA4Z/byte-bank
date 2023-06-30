@@ -104,7 +104,16 @@
 			TotalDeContasCriadas++;
 		}
 
-		public override string ToString()
+        public ContaCorrente(int numero_agencia, string conta)
+        {
+            Numero_agencia = numero_agencia;
+            Conta = conta;
+            Titular = new Cliente();
+            TotalDeContasCriadas += 1;
+
+        }
+
+        public override string ToString()
 		{
 
 			return $" === DADOS DA CONTA === \n" +
