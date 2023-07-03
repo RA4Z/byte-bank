@@ -98,7 +98,13 @@ void TestaArrayDeContasCorrentes()
 }
 #endregion
 
-ArrayList _listaDeContas = new ArrayList();
+List<ContaCorrente> _listaDeContas = new List<ContaCorrente>()
+{
+    new ContaCorrente(93, "123456-X") {Saldo=100},
+    new ContaCorrente(94, "634782-Y") {Saldo=200},
+    new ContaCorrente(95, "987654-Z") {Saldo=60},
+};
+
 AtendimentoCliente();
 
 void AtendimentoCliente()
@@ -193,3 +199,4 @@ void ListarContas()
     }
 
 }
+
